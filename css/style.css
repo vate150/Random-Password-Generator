@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none; border: none;
 }
 
 body {
@@ -17,8 +18,9 @@ body {
 
 .inputBox {
     position: relative;
-    width: 450px;
-    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #999;
     border-radius: 10px;
 }
@@ -31,27 +33,22 @@ body {
 
 .inputBox input {
     position: relative;
+    text-align: center;
     width: 100%;
     height: 60px;
-    border: none;
-    outline: none;
     margin: 15px 0 20px;
-    background: #999;
     font-size: 18px;
     padding: 0 20px;
     letter-spacing: 4px;
-    border-radius: 8px;
-    color: #fff;  
-}
-
-.inputBox input::placeholder {
-    letter-spacing: 0px;
+    background: #999;
+    color: #fff;
 }
 
 .inputBox #btn {
-    position: absolute;
+    position: relative;
+    text-align: center;
     cursor: pointer;
-    margin: 10px;
+    margin-bottom: 10px;
     width: 300px;
     color: #fff;
     background: #333;
